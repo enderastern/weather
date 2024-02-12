@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    background: rgb(70,217,181);
+    background: linear-gradient(304deg, rgba(70,217,181,0.9612219887955182) 42%, rgba(99,184,219,1) 61%);
+}
+
+.card {
+    background: rgb(34,162,195);
+}
+
+.search {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.search button {
+   width: 44px;
+   height: 40px;
+   border-radius: 100%;
+   background-color: rgb(6, 203, 140);
+}
+
+.search button i {
+    color: #fff !important;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    display: none;
+}
+
+.weather-section {
+    background-image: url('/img/anime.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 9;
+}
+.weather-section::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #031c35b1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.card {
+    width: 50% !important;
+}
+
+@media(max-width: 900px){
+    .card {
+        width: 80% !important;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .temp {
+        font-size: 30px !important;
+    }
+    .city {
+        font-size: 40px !important;
+    }
+}
+
+@media(max-width: 620px) {
+    .detalis{
+        display: block !important;
+    }
+}
